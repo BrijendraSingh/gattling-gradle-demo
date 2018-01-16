@@ -1,6 +1,0 @@
-RUN	simulation.BookFlightSimulation		bookflightsimulation	1512397504327	 	2.0
-USER	Book Flight	1	START	1512397505735	1512397505735
-REQUEST	Book Flight	1		Search Flight	1512397505766	1512397507116	KO	xpath((//table[@class='table']/tbody/tr/td[2],List())).findAll.exists failed, could not prepare: Could not parse response into a DOM Document: SaxonApiException: org.xml.sax.SAXParseException; lineNumber: 1; columnNumber: 3; The markup in the document preceding the root element must be well-formed.
-REQUEST	Book Flight	1		Select Flight	1512397517138	1512397517575	OK	 
-REQUEST	Book Flight	1		Buy Ticket	1512397537579	1512397537959	OK	 
-USER	Book Flight	1	END	1512397505735	1512397537993
