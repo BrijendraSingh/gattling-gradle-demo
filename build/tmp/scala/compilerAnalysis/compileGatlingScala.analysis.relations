@@ -7,35 +7,104 @@ products:
    src/gatling/scala/actions/SelectFlight.scala -> build/classes/gatling/actions/SelectFlight.class
    src/gatling/scala/config/Config.scala -> build/classes/gatling/config/Config$.class
    src/gatling/scala/config/Config.scala -> build/classes/gatling/config/Config.class
+   src/gatling/scala/httpsetup/HttpSetup.scala -> build/classes/gatling/httpsetup/HttpSetup$.class
+   src/gatling/scala/httpsetup/HttpSetup.scala -> build/classes/gatling/httpsetup/HttpSetup.class
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> build/classes/gatling/httpsetup/HttpSetupLogin$.class
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> build/classes/gatling/httpsetup/HttpSetupLogin.class
+   src/gatling/scala/query/GoogleQuery.scala -> build/classes/gatling/query/GoogleQuery$.class
+   src/gatling/scala/query/GoogleQuery.scala -> build/classes/gatling/query/GoogleQuery.class
+   src/gatling/scala/query/LoginQuery.scala -> build/classes/gatling/query/LoginQuery$.class
+   src/gatling/scala/query/LoginQuery.scala -> build/classes/gatling/query/LoginQuery.class
+   src/gatling/scala/scenario/BlazedemoLoginScenario.scala -> build/classes/gatling/scenario/BlazedemoLoginScenario$.class
+   src/gatling/scala/scenario/BlazedemoLoginScenario.scala -> build/classes/gatling/scenario/BlazedemoLoginScenario.class
+   src/gatling/scala/scenario/GoogleHomeScenario.scala -> build/classes/gatling/scenario/GoogleHomeScenario$.class
+   src/gatling/scala/scenario/GoogleHomeScenario.scala -> build/classes/gatling/scenario/GoogleHomeScenario.class
    src/gatling/scala/simulation/BookFlightSimulation.scala -> build/classes/gatling/simulation/BookFlightSimulation.class
+   src/gatling/scala/simulation/LoginSimulation.scala -> build/classes/gatling/simulation/LoginSimulation.class
+   src/gatling/scala/simulation/TestSimulation.scala -> build/classes/gatling/simulation/TestSimulation.class
+   src/gatling/scala/simulation/TestSimulation1.scala -> build/classes/gatling/simulation/TestSimulation1.class
+   src/gatling/scala/simulations/GoogleSearchSimulation.scala -> build/classes/gatling/simulations/GoogleSearchSimulation.class
+   src/gatling/scala/simulations/LoginSimulation.scala -> build/classes/gatling/simulations/LoginSimulation.class
 binary dependencies:
-   src/gatling/scala/actions/BookTicket.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
-   src/gatling/scala/actions/BookTicket.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
-   src/gatling/scala/actions/BookTicket.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
-   src/gatling/scala/actions/BookTicket.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
-   src/gatling/scala/actions/BookTicket.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
-   src/gatling/scala/actions/SearchFlight.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
-   src/gatling/scala/actions/SearchFlight.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
-   src/gatling/scala/actions/SearchFlight.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
-   src/gatling/scala/actions/SearchFlight.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
-   src/gatling/scala/actions/SearchFlight.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
-   src/gatling/scala/actions/SelectFlight.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
-   src/gatling/scala/actions/SelectFlight.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
-   src/gatling/scala/actions/SelectFlight.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
-   src/gatling/scala/actions/SelectFlight.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
-   src/gatling/scala/actions/SelectFlight.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
-   src/gatling/scala/config/Config.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
-   src/gatling/scala/config/Config.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.3.1/2cf7a6cc79732e3bdf1647d7404279900ca63eb0/config-1.3.1.jar
-   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home/jre/lib/rt.jar
-   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
-   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
-   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
-   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Users/biswajip/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/actions/BookTicket.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/actions/BookTicket.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/actions/BookTicket.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/actions/BookTicket.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/actions/BookTicket.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/actions/SearchFlight.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/actions/SearchFlight.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/actions/SearchFlight.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/actions/SearchFlight.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/actions/SearchFlight.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/actions/SelectFlight.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/actions/SelectFlight.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/actions/SelectFlight.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/actions/SelectFlight.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/actions/SelectFlight.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/config/Config.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/config/Config.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.3.1/2cf7a6cc79732e3bdf1647d7404279900ca63eb0/config-1.3.1.jar
+   src/gatling/scala/httpsetup/HttpSetup.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/httpsetup/HttpSetup.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/httpsetup/HttpSetup.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/httpsetup/HttpSetup.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/httpsetup/HttpSetup.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/query/GoogleQuery.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/query/GoogleQuery.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/query/GoogleQuery.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/query/GoogleQuery.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/query/GoogleQuery.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/query/LoginQuery.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/query/LoginQuery.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/query/LoginQuery.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/query/LoginQuery.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/query/LoginQuery.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/scenario/BlazedemoLoginScenario.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/scenario/BlazedemoLoginScenario.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/scenario/BlazedemoLoginScenario.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/scenario/GoogleHomeScenario.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/scenario/GoogleHomeScenario.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/scenario/GoogleHomeScenario.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/simulation/BookFlightSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/simulation/LoginSimulation.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/simulation/LoginSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/simulation/LoginSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/simulation/LoginSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/simulation/LoginSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-jdbc/2.3.0/2d0e7dad13c3599ae52845cb2bf81dfb4ad33498/gatling-jdbc-2.3.0.jar
+   src/gatling/scala/simulation/LoginSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/simulation/TestSimulation.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/simulation/TestSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/simulation/TestSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/simulation/TestSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/simulation/TestSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/simulation/TestSimulation1.scala -> /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre/lib/rt.jar
+   src/gatling/scala/simulation/TestSimulation1.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-commons/2.3.0/fc017fa7bba948954a25219cdd1262b166a6e921/gatling-commons-2.3.0.jar
+   src/gatling/scala/simulation/TestSimulation1.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/simulation/TestSimulation1.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/simulation/TestSimulation1.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/org.scala-lang/scala-library/2.12.3/f2e496f21af2d80b48e0a61773f84c3a76a0d06f/scala-library-2.12.3.jar
+   src/gatling/scala/simulations/GoogleSearchSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/simulations/GoogleSearchSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
+   src/gatling/scala/simulations/LoginSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-core/2.3.0/dd80c883fc7c4f4e6d961ac0eb3668ce045d06ef/gatling-core-2.3.0.jar
+   src/gatling/scala/simulations/LoginSimulation.scala -> /Users/null/.gradle/caches/modules-2/files-2.1/io.gatling/gatling-http/2.3.0/8b7bd3cc1928b8076e65d077e24d634eebde2c75/gatling-http-2.3.0.jar
 source dependencies:
+   src/gatling/scala/scenario/BlazedemoLoginScenario.scala -> src/gatling/scala/query/LoginQuery.scala
+   src/gatling/scala/scenario/GoogleHomeScenario.scala -> src/gatling/scala/query/GoogleQuery.scala
    src/gatling/scala/simulation/BookFlightSimulation.scala -> src/gatling/scala/actions/BookTicket.scala
    src/gatling/scala/simulation/BookFlightSimulation.scala -> src/gatling/scala/actions/SearchFlight.scala
    src/gatling/scala/simulation/BookFlightSimulation.scala -> src/gatling/scala/actions/SelectFlight.scala
    src/gatling/scala/simulation/BookFlightSimulation.scala -> src/gatling/scala/config/Config.scala
+   src/gatling/scala/simulations/GoogleSearchSimulation.scala -> src/gatling/scala/httpsetup/HttpSetup.scala
+   src/gatling/scala/simulations/GoogleSearchSimulation.scala -> src/gatling/scala/scenario/GoogleHomeScenario.scala
+   src/gatling/scala/simulations/LoginSimulation.scala -> src/gatling/scala/httpsetup/HttpSetupLogin.scala
+   src/gatling/scala/simulations/LoginSimulation.scala -> src/gatling/scala/scenario/BlazedemoLoginScenario.scala
 external dependencies:
 class names:
    src/gatling/scala/actions/BookTicket.scala -> actions.BookTicket
@@ -46,4 +115,21 @@ class names:
    src/gatling/scala/actions/SelectFlight.scala -> actions.SelectFlight$
    src/gatling/scala/config/Config.scala -> config.Config
    src/gatling/scala/config/Config.scala -> config.Config$
+   src/gatling/scala/httpsetup/HttpSetup.scala -> httpsetup.HttpSetup
+   src/gatling/scala/httpsetup/HttpSetup.scala -> httpsetup.HttpSetup$
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> httpsetup.HttpSetupLogin
+   src/gatling/scala/httpsetup/HttpSetupLogin.scala -> httpsetup.HttpSetupLogin$
+   src/gatling/scala/query/GoogleQuery.scala -> query.GoogleQuery
+   src/gatling/scala/query/GoogleQuery.scala -> query.GoogleQuery$
+   src/gatling/scala/query/LoginQuery.scala -> query.LoginQuery
+   src/gatling/scala/query/LoginQuery.scala -> query.LoginQuery$
+   src/gatling/scala/scenario/BlazedemoLoginScenario.scala -> scenario.BlazedemoLoginScenario
+   src/gatling/scala/scenario/BlazedemoLoginScenario.scala -> scenario.BlazedemoLoginScenario$
+   src/gatling/scala/scenario/GoogleHomeScenario.scala -> scenario.GoogleHomeScenario
+   src/gatling/scala/scenario/GoogleHomeScenario.scala -> scenario.GoogleHomeScenario$
    src/gatling/scala/simulation/BookFlightSimulation.scala -> simulation.BookFlightSimulation
+   src/gatling/scala/simulation/LoginSimulation.scala -> simulation.LoginSimulation
+   src/gatling/scala/simulation/TestSimulation.scala -> simulation.TestSimulation
+   src/gatling/scala/simulation/TestSimulation1.scala -> simulation.TestSimulation1
+   src/gatling/scala/simulations/GoogleSearchSimulation.scala -> simulations.GoogleSearchSimulation
+   src/gatling/scala/simulations/LoginSimulation.scala -> simulations.LoginSimulation

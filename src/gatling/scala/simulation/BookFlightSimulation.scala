@@ -44,6 +44,7 @@ class BookFlightSimulation extends Simulation {
 //      constantUsersPerSec(0) during(10),
 //      rampUsersPerSec(10) to(1) during(10)
     )
-  ).protocols(httpProtocol)
+  ).protocols(httpProtocol).assertions(forAll.responseTime.min.is(10))
+//    assertions(forAll.failedRequests.count.is(0))
 }
 
