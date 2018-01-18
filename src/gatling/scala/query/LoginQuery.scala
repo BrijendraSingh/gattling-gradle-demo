@@ -2,6 +2,7 @@ package query
 
 import io.gatling.http.Predef._
 import io.gatling.core.Predef._
+import jodd.util.URLDecoder
 
 object LoginQuery {
 
@@ -21,6 +22,7 @@ object LoginQuery {
     .formParam("email", username)
     .formParam("password", password)
 //    .check(headerRegex("Set-Cookie", "XSRF-TOKEN=(.*)").saveAs("xsrf_token"))
+//    .check(headerRegex("Set-Cookie", """XSRF-TOKEN=(.*)\s""").transform(token => URLDecoder.decode(token, "UTF-8").dropRight(1)).saveAs("xsrfToken"))
     .check(status.is(s => 200))
     .check(substring(password).exists)
     .check(substring("You are logged in!").exists)
@@ -38,5 +40,5 @@ object LoginQuery {
   val home=http("home")
     .get("/home")
     .headers(headers_0)
-//    .formParam("Cookie","XSRF-TOKEN=\"${xsrf_token}\"")
+    .formParam("Cookie","XSRF-TOKEN=\"${xsrfToken}\"")
 }

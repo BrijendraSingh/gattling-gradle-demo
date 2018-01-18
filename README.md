@@ -35,7 +35,7 @@ If you want to use Intellij as the IDE, install [Intellij](https://www.jetbrains
 
 4. Run the simulation in CLI using following command
 
-osx/ Linux - ./gradlw gatlingRun
+osx/ Linux - ./gradlew gatlingRun
 
 windows - ./gradlew.bat gatlingRun
 
