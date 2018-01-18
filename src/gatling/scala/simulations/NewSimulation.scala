@@ -27,7 +27,7 @@ class NewSimulation extends Simulation {
 
 
   //create a run
-  setUp(scn1.inject(atOnceUsers(1)).protocols(httpConf1))
+//  setUp(scn1.inject(atOnceUsers(1)).protocols(httpConf1))
 
 
 
