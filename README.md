@@ -1,42 +1,48 @@
-gatling-gradle-demo
+# gatling-gradle-demo
 contains a demo performance test on gatling using gradle
 
 to run on OSX, type following command
 
 $./gradlew gatlingRun
 
-Prerequisites -
+# Prerequisites - 
+
 a. Java 8 JDK
 
-If you have java, run java -version to check which version you are using.
+If you have java, run java -version to check which version you are using. 
 
-If you don't have java, here is the place to look for JDK installation.
+If you don't have java, [here](https://www3.ntu.edu.sg/home/ehchua/programming/howto/JDK_Howto.html) is the place to look for JDK installation.
 
 b. gradle 3.1 or above
 
-You may find here the steps to install gradle.
+You may find [here](https://gradle.org/install/#manually) the steps to install gradle.
 
 c. Scala SDK
 
-Install Scala binaries as mentioned here
+Install Scala binaries as mentioned [here](https://www.journaldev.com/7456/download-install-scala-linux-unix-windows)
 
 d. Intellij Scala Plugin
 
-If you want to use Intellij as the IDE, install Intellij and Intellij Scala Plugin
+If you want to use Intellij as the IDE, install [Intellij](https://www.jetbrains.com/idea/download/) and [Intellij Scala Plugin](http://nanxiao.me/en/getting-started-with-scala-in-intellij-idea-14-1/)
 
-Steps to run the simulation
-Clone the repository to your machine.
+# Steps to run the simulation
 
-Open the project in Intellij
+1. Clone the repository to your machine.
 
-Verify the Scala SDK in Platform Settings. (File -> Project Structure -> Platform Settings -> Global Libraries)
+2. Open the project in Intellij
 
-Run the simulation in CLI using following command
+3. Verify the Scala SDK in Platform Settings. (File -> Project Structure -> Platform Settings -> Global Libraries)
+
+4. Run the simulation in CLI using following command
 
 osx/ Linux - ./gradlw gatlingRun
 
 windows - ./gradlew.bat gatlingRun
 
-It runs the simulation(s) present in src/gatling/scala/simulation. The simulation result is available in build/reports/gatling/{simulation-number}/index.html
+to run a single simulation ./gradlew gatlingRun-<packagename.simulationname>
+eg: ./gradlew gatlingRun-simulation.LoginSimulation
 
-Note - This test is written on OSX. While I have tried to make it os-agnostic, please log an issue/ raise a pull request if you find any os dependency.
+It runs the simulation(s) present in  *src/gatling/scala/simulation*. The simulation result is available in *build/reports/gatling/{simulation-number}/index.html*
+
+
+**Note** - This test is written on OSX. While I have tried to make it os-agnostic, please log an issue/ raise a pull request if you find any os dependency.
