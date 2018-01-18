@@ -7,20 +7,36 @@ object LoginQuery {
 
   val username="TestGatling@gmail.com"
   val password="TestGatling"
+  val headers_0 = Map("Upgrade-Insecure-Requests" -> "1")
 
-  val query = http("blazedemo")
-    .post("/login")
-    .formParam("_token", "wTNUh7hBpCniRsSRc2gLPpBBzSpSHDKcxYuUCDPs")
-    .formParam("email", {username})
-    .formParam("password", {password})
+  val getLoginQuery = http("getlogin")
+    .get("/login")
+    .headers(headers_0)
     .check(status.is(s => 200))
 
-  val queryLogin = http("blazedemo")
+  val query = http("loginoneuser")
     .post("/login")
-    .formParam("_token", "wTNUh7hBpCniRsSRc2gLPpBBzSpSHDKcxYuUCDPs")
+    .headers(headers_0)
+//    .formParam("_token", "wTNUh7hBpCniRsSRc2gLPpBBzSpSHDKcxYuUCDPs")
+    .formParam("email", username)
+    .formParam("password", password)
+//    .check(headerRegex("Set-Cookie", "XSRF-TOKEN=(.*)").saveAs("xsrf_token"))
+    .check(status.is(s => 200))
+    .check(substring(password).exists)
+    .check(substring("You are logged in!").exists)
+
+  val queryLogin = http("loginmultiuser")
+    .post("/login")
+    .headers(headers_0)
+//    .formParam("_token", "wTNUh7hBpCniRsSRc2gLPpBBzSpSHDKcxYuUCDPs")
     .formParam("email", "${username}")
     .formParam("password", "${password}")
     .check(status.is(s => 200))
+    .check(substring("${displayname}").exists)
+    .check(substring("You are logged in!").exists)
 
-
+  val home=http("home")
+    .get("/home")
+    .headers(headers_0)
+//    .formParam("Cookie","XSRF-TOKEN=\"${xsrf_token}\"")
 }

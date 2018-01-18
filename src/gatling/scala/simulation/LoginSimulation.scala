@@ -2,7 +2,6 @@ package simulation
 
 
 import scala.concurrent.duration._
-
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
@@ -36,12 +35,12 @@ class LoginSimulation extends Simulation {
 			.formParam("email", {username})
 			.formParam("password", {password})
 			.check(status.is(s => 200))
-	  	.check())
-		.pause(8)
-		.exec(http("request_3")
-			.post("/logout")
-			.headers(headers_0)
-			.formParam("_token", "wTNUh7hBpCniRsSRc2gLPpBBzSpSHDKcxYuUCDPs"))
+			.check(substring(password).exists))
+//		.pause(8)
+//		.exec(http("request_3")
+//			.post("/logout")
+//			.headers(headers_0)
+//			.formParam("_token", "wTNUh7hBpCniRsSRc2gLPpBBzSpSHDKcxYuUCDPs"))
 
 	setUp(scn.inject(atOnceUsers(1))).protocols(httpProtocol)
 }

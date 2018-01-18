@@ -5,6 +5,6 @@ import io.gatling.http.Predef._
 
 object HttpSetup {
   val httpProtocol = http
-    .baseURL("http://blazedemo.com")
+    .baseURL("http://www.google.com")
     .contentTypeHeader("application/json")
 }
