@@ -1,4 +1,4 @@
-package simulation
+package simulation123
 
 
 import scala.concurrent.duration._
@@ -6,7 +6,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
 
-class LoginSimulation extends Simulation {
+class LoginSimulation123 extends Simulation {
 
 	val httpProtocol = http
 		.baseURL("http://blazedemo.com")

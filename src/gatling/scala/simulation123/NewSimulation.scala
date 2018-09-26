@@ -1,4 +1,4 @@
-package simulations
+package simulation123
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
@@ -27,7 +27,7 @@ class NewSimulation extends Simulation {
 
 
   //create a run
-//  setUp(scn1.inject(atOnceUsers(1)).protocols(httpConf1))
+  setUp(scn1.inject(atOnceUsers(1)).protocols(httpConf1))
 
 
 

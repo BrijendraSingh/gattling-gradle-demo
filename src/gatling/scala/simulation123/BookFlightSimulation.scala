@@ -1,4 +1,4 @@
-package simulation
+package simulation123
 
 /**
   * Created by biswajip on 11/25/17.
@@ -46,5 +46,14 @@ class BookFlightSimulation extends Simulation {
     )
   ).protocols(httpProtocol).assertions(forAll.responseTime.min.is(10))
 //    assertions(forAll.failedRequests.count.is(0))
+
+
+//  setUp(scn.inject(constantUsersPerSec(100) during (30 minutes))).throttle(
+//    reachRps(100) in (10 seconds),
+//    holdFor(1 minute),
+//    jumpToRps(50),
+//    holdFor(2 hours)
+//  )
+
 }
 

@@ -1,11 +1,9 @@
-package simulation
-
-
+package simulation123
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class TestSimulation extends Simulation {
+class TestSimulation1 extends Simulation {
 
   val httpProtocol = http
     .baseURL("http://blazedemo.com")
@@ -20,27 +18,9 @@ class TestSimulation extends Simulation {
 
   val uri1 = "http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"
 
-  val scn = scenario("DemoSimulation")
-    .exec(http("request_0")
-      .get("/")
-      .headers(headers_0))
-    .pause(178)
-    .exec(http("request_1")
-      .post("/reserve.php")
-      .headers(headers_0)
-      .formParam("fromPort", "Boston")
-      .formParam("toPort", "Berlin"))
-    .pause(74)
-    .exec(http("request_2")
-      .post("/purchase.php")
-      .headers(headers_0)
-      .formParam("flight", "43")
-      .formParam("price", "472.56")
-      .formParam("airline", "Virgin America")
-      .formParam("fromPort", "Boston")
-      .formParam("toPort", "Berlin"))
-    .pause(64)
-    .exec(http("request_3")
+  def select()=
+  {
+    http("request_3")
       .post("/confirmation.php")
       .headers(headers_0)
       .formParam("_token", "")
@@ -54,7 +34,37 @@ class TestSimulation extends Simulation {
       .formParam("creditCardMonth", "11")
       .formParam("creditCardYear", "2017")
       .formParam("nameOnCard", "Null")
-      .formParam("rememberMe", "on"))
+      .formParam("rememberMe", "on")
+  }
+
+  def search()={
+    http("request_2")
+      .post("/purchase.php")
+      .headers(headers_0)
+      .formParam("flight", "43")
+      .formParam("price", "472.56")
+      .formParam("airline", "Virgin America")
+      .formParam("fromPort", "Boston")
+      .formParam("toPort", "Berlin")
+  }
+
+  def book()={
+    http("request_1")
+      .post("/reserve.php")
+      .headers(headers_0)
+      .formParam("fromPort", "Boston")
+      .formParam("toPort", "Berlin")
+  }
+  val scn = scenario("DemoSimulation")
+    .exec(http("request_0")
+      .get("/")
+      .headers(headers_0))
+    .pause(178)
+    .exec(book())
+    .pause(74)
+    .exec(search())
+    .pause(64)
+    .exec(select())
 
   setUp(scn.inject(atOnceUsers(3))).protocols(httpProtocol)
 }
